@@ -1,6 +1,6 @@
 const timer = require("./timer");
 
-beforeEach(() => jest.useFakeTimers("legacy"));
+beforeAll(() => jest.useFakeTimers("legacy"));
 
 test("testing timer", () => {
   expect(setTimeout).not.toHaveBeenCalled();
